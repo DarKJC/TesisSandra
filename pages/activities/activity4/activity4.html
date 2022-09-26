@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="activity4.css">
+    <title>Activity 4</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-wrapper">
+            <nav class="nav">
+                <ul class="nav_ul" role="list">
+                    <li class="nav_li">
+                        <a href="../../../index.html">Home</a>
+                    </li>
+                    <li class="nav_li sub"> <a href="">Contents</a>
+                        <ul class="submenu">
+                            <li class="nav_li submenu_li">
+                                <a href="../../study-material/regular-verbs/regular-verbs.html">Regular verbs</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../../study-material/irregular-verbs/irregular-verbs.html">Irregular verbs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_li">
+                        <a href="../../vocabulary/vocabulary.html">Vocabulary</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="../../videos/videos.html">Videos</a>
+                    </li>
+                    <li class="nav_li sub"><a href="">Activities</a>
+                        <ul class="submenu">
+                            <li class="nav_li submenu_li">
+                                <a href="../activity1/activity1.html">Activity1</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../activity2/activity2.html">Activity2</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../activity3/activity3.html">Activity3</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="#">Activity4</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../activity5/activity5.html">Activity5</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../activity6/activity6.html">Activity6</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../activity7/activity7.html">Activity7</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_li">
+                        <a href="../../results/results.html">Results</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="../../bibliography/bibliography.html">References</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="loguin" class="get-user">
+                <label for="name">What's your name</label>
+                <div>
+                    <input type="text" id="name">
+                    <button class="button" onclick="guardar()">Start learning!</button>
+                </div>
+            </div>
+            <span class="hidden" id="nombre" class="user">Nombre de usuario</span>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <main>
+            <h1>ACTIVITY 4</h1>
+            <section class="questions-container">
+
+                <div class="question" id="question2">
+
+                    <div class="question__wrap">
+                        <span class="icons"><img src="/images/icons/icons8-open-book-50.png" alt=""></span>
+                        <p>
+                            Read >> Complete the text with the correct form of the verbs in brackets.
+                        </p>
+                    </div>
+
+                    <div class="verb-form">
+
+                        <h2>A story of change</h2>
+
+                        <div class="text-body">
+
+                            <p>
+                                La Paz School is a rural school in the mountains of Central Colombia. A few years ago,
+                                teachers and students
+                                <select onchange="selU()" class="select" name="activity4a" id="act-a">
+                                    <option value="" selected>(decide)</option>
+                                    <option value="decides">decides</option>
+                                    <option value="decided">decided</option>
+                                    <option value="deciding">deciding</option>
+                                </select>
+                                to do something about the environmental problems they had. Deforestation and bad
+                                management
+                                of waste
+                                <select onchange="selD()" class="select" name="activity4b" id="act-b">
+                                    <option value="" selected>(be)</option>
+                                    <option value="been">been</option>
+                                    <option value="was">was</option>
+                                    <option value="were">were</option>
+                                </select>
+                                their main concerns. As a result, they
+                                <select onchange="selT()" class="select" name="activity4c" id="act-c">
+                                    <option value="" selected>(create)</option>
+                                    <option value="created">created</option>
+                                    <option value="create">create</option>
+                                    <option value="creates">creates</option>
+                                </select>
+                                an environmental group to look for solutions.
+                            </p>
+
+                            <p>
+                                First, they
+                                <select onchange="selC()" class="select" name="activity4d" id="act-d">
+                                    <option value="" selected>(research)</option>
+                                    <option value="researching">researching</option>
+                                    <option value="researches">researches</option>
+                                    <option value="researched">researched</option>
+                                </select>
+                                information about
+                                the people, their businesses and the impact
+                                of their actions. Then, they
+                                <select onchange="selCi()" class="select" name="activity4e" id="act-e">
+                                    <option value="" selected>(organize)</option>
+                                    <option value="organizes">organizes</option>
+                                    <option value="organized">organized</option>
+                                    <option value="organizing">organizing</option>
+                                </select>
+                                a
+                                campaign to protect the rivers in their town.
+                                They
+                                <select onchange="selS()" class="select" name="activity4f" id="act-f">
+                                    <option value="" selected>(talk)</option>
+                                    <option value="talked">talked</option>
+                                    <option value="talks">talks</option>
+                                    <option value="tolk">tolk</option>
+                                </select>
+                                to the local authorities
+                                about prohibiting the industries from
+                                dumping waste. They
+                                <select onchange="selSi()" class="select" name="activity4g" id="act-g">
+                                    <option value="" selected>(start)</option>
+                                    <option value="starts">starts</option>
+                                    <option value="starting">starting</option>
+                                    <option value="started">started</option>
+                                </select>
+                                teaching
+                                people about recycling methods and the
+                                whole town
+                                <select onchange="selO()" class="select" name="activity4h" id="act-h">
+                                    <option value="" selected>(sign)</option>
+                                    <option value="signed">signed</option>
+                                    <option value="signing">signing</option>
+                                    <option value="signs">signs</option>
+                                </select>
+                                a petition to stop
+                                the destruction of their forests. They
+                                <select onchange="selN()" class="select" name="activity4i" id="act-i">
+                                    <option value="" selected>(plant)</option>
+                                    <option value="plants">plants</option>
+                                    <option value="planted">planted</option>
+                                    <option value="planting">planting</option>
+                                </select>
+                                more than 2,000 trees near the river.
+                            </p>
+
+                            <p>
+                                Now people in our town j
+                                <select onchange="selDi()" class="select" name="activity4j" id="act-j">
+                                    <option value="" selected>(be)</option>
+                                    <option value="are">are</option>
+                                    <option value="was">was</option>
+                                    <option value="were">were</option>
+                                </select>
+                                happy with the results. Liliana, a 15-year-old
+                                student at La Paz School, said: ‘Now we
+                                <select onchange="selOn()" class="select" name="activity4k" id="act-k">
+                                    <option value="" selected>(have)</option>
+                                    <option value="had">had</option>
+                                    <option value="have">have</option>
+                                    <option value="has">has</option>
+                                </select>
+                                lots of trees around our
+                                houses and parks; the rivers are clean; and
+                                we understand that when people work
+                                together to support a cause, the little things
+                                that everyone
+                                <select onchange="selDo()" class="select" name="activity4l" id="act-l">
+                                    <option value="" selected>(do)</option>
+                                    <option value="did">did</option>
+                                    <option value="done">done</option>
+                                    <option value="does">does</option>
+                                </select>
+                                can create big
+                                changes.”
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <input class="button button__activity" type="button" id="respuesta" disabled="true"
+                        onclick="revisarRespuesta()" value="Send answer"></input>
+
+                </div>
+
+                <div class="attempts">
+                    <h2>Attempts</h2>
+                    <div class="total">
+                        <label>Total</label>
+                        <p id="total">0</p>
+                    </div>
+                    <div class="succesful">
+                        <label>successful</label>
+                        <p id="aciertos">0</p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    </div>
+    <script src="/script/usuario.js"></script>
+    <script src="/script/actividad4.js"></script>
+</body>
+
+</html>

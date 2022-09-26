@@ -1,0 +1,108 @@
+:root{
+    --color-primary: hsl(27, 87%, 67%);
+    --color-secondary: hsl(145, 71%, 28%);
+    --color-light: hsl(231, 33%, 96%);
+    --color-dark: hsl(210, 13%, 12%);
+}
+
+body{
+    color: var(--color-dark);
+}
+
+h1, h2, h3, h4, h5, h6{
+    color: var(--color-primary);
+}
+
+input, select{
+  border-radius: 4px;
+  border: 1px solid var(--color-primary);
+}
+
+.button{
+    color: var(--color-light);
+    background-color: var(--color-secondary);
+}
+
+.button:hover, .button:focus-visible{
+    background-color: hsl(145, 71%, 18%);
+}
+.button:active{
+background-color: hsl(145, 71%, 38%);
+}
+
+.button:disabled, .button:disabled:hover, .button:disabled:focus-visible{
+  /* color: var(--color-dark); */
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.button__activity{
+  box-shadow: 1px 1px 5px hsla(0, 0%, 1%, 0.4);
+}
+
+.page-content h1{
+  color: var(--color-light); 
+  background-color: var(--color-primary);
+  
+  box-shadow: 0 1px 1px var(--color-secondary);
+}
+
+.attempts div{
+    background-color: var(--color-primary);
+    color: var(--color-light);
+  }
+
+  div.succesful{
+    background-color: var(--color-secondary);
+  }
+
+  .word-bank, .verb-form{
+    background-color: var(--color-light);
+    border: 1px solid var(--color-primary);
+  }
+  /* .word-bank::after{
+    background-color: var(--color-primary);
+  } */
+
+  .title{
+    color: var(--color-light);
+  }
+
+  .section-container{
+    background-color: hsla(0, 0%, 100%, 0.3);
+    /* border-top: 2px solid white;
+    border-left: 2px solid white;
+    border-bottom: 1px solid rgb(155, 155, 155);
+    border-right: 1px solid rgb(155, 155, 155); */
+  }
+
+  .header-wrapper{
+    background-color: var(--color-light)
+  }
+
+  .nav_li{
+    background-color: var(--color-light);
+  }
+
+  .nav_li a{
+    color: var(--color-secondary);
+  }
+
+  .submenu_li:hover, .submenu_li:focus-visible{
+    border-bottom: 2px solid var(--color-primary);
+    /* border-left: 4px solid var(--color-primary); */
+  }
+
+  .sentence, .mag-article{
+    background-color: var(--color-light);
+    border: 2px solid var(--color-primary);
+  }
+
+  .activities{
+    background-color: var(--color-light);
+    border: 2px solid var(--color-primary);
+  }
+
+  .activities h2{
+    border-block-end:1px solid var(--color-primary) ;
+  }

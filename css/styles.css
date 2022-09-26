@@ -1,0 +1,297 @@
+@import 'root.css';
+@import 'theme.css';
+@import '_reset.css';
+
+/* my styles */
+body{
+  font-family: var(--font-family-body), serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-family: var(--font-family-headings), sans-serif;
+}
+
+select{
+  padding-block: .5rem;
+}
+
+p{
+  margin-block-end: 1rem;
+}
+
+.index-main{
+    min-height: calc(100vh - 56px);
+    background-image: url(../images/hand-tree-nature-forest-grass-plant-860413-pxhere.com.jpg);
+    background-size: cover;
+    background-position: fixed;
+}
+.gradient{
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - 56px);
+    z-index: 1;
+    background-image: linear-gradient(to bottom right, rgba(61, 142, 9, 0.5), rgba(242, 146, 3, 0.5));
+}
+.main-content{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    justify-items: center; */
+    position: relative;
+    min-height: calc(100vh - 56px);
+    z-index: 2;
+    /* nuevo */
+    width: 100vw;
+}
+
+.main-grid-container{
+  display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-content: center;
+    justify-items: center;
+    margin-block-start: 10rem;
+}
+
+.main-content h1{
+  text-align: center;
+  margin-block-end: 2em;
+  padding-block-start: 2em;
+  text-shadow: 1px 1px 3px var(--color-dark);
+  color: var(--color-light);
+}
+
+.main-content h2{
+  text-shadow: 1px 1px 3px var(--color-dark);
+  color: var(--color-light);
+}
+
+
+.title{
+  position: absolute;
+  margin-top: 3em;
+}
+
+/* .title::before{
+  content: " ";
+  position: fixed;
+  left: 0;
+  width: 100vw;
+  height: 1.5em;
+  background-color: var(--color-primary);
+  mix-blend-mode: color-dodge;
+} */
+
+.section-container{
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  /* nuevo */
+  width: max-content;
+  display: inline-block;
+  margin-inline: auto;
+  border: 5px solid var(--color-primary);
+  /* min-height: 300px; */
+
+}
+.main-content p{
+  max-width: 60ch;
+}
+
+.page-content, .header-wrapper{
+  max-width: 1920px;
+  margin-inline: auto;
+  padding-inline: 1rem;
+}
+
+.header-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+/* navigation */
+.nav_ul{
+  padding-inline-start: 0;
+  z-index: inherit;
+}
+
+.nav_li{
+  display: inline;
+  /* position: relative; */
+  margin-inline: 1rem;
+  padding-block: .5rem;
+  z-index: inherit;
+}
+
+.sub{
+  position: relative;
+  z-index: inherit;
+}
+
+.sub:hover .submenu, .sub:focus-visible .submenu, .submenu_li a:hover{
+  display: inline-block;
+  z-index: 10;
+}
+
+.nav_li a{
+  width: 100%;
+  text-decoration: none;
+  padding-inline-start: 1rem;
+}
+
+.submenu{
+  position: absolute;
+  display: none;
+  width: 30ch; /*por ahora mientras me dan los nombres*/
+  top: 2rem;
+  left: -6ch;
+  /* text-align: center; */
+}
+
+.submenu_li{
+  display: block;
+}
+
+.submenu_li:hover a, .submenu_li:focus-visible a{
+  transform: translateX(.5rem);
+}
+
+/* login */
+.get-user label{
+  font-size: .8rem;
+}
+
+/* estilos generales */
+.button{
+  font-family: var(--font-family-headings);
+  padding-inline: 1em;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+}
+
+.button__activity{
+  display: block;
+  margin-block-start: 1rem;
+  margin-inline: auto;
+  padding-block: .5em;
+}
+.page-content{
+  padding-block-start: 2rem;
+}
+
+.page-content h1{
+  position: relative;
+  width: fit-content;
+  margin-inline-start: -1em;
+  margin-block-end: 1rem;
+  padding-inline: 1em;
+}
+
+.page-content h1::after{
+  content: "";
+  position: absolute;
+  width: 1.2em;
+  /*height: 1.2em;
+  top: .18em;
+  right: -.6em; */
+height: 1.1em;
+top: 0.27em;
+right: -.65em;
+  transform: rotate(45deg);
+  background-color: white;
+  border-inline-start: 1px solid var(--color-secondary);
+  /* border: 1px dashed var(--color-primary);
+  border-right: none;
+  border-top: none;  */
+}
+
+.attempts{
+  position: absolute;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  top: 56px;
+  right: 0;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+.attempts div{
+  padding-inline: 1rem;
+  /* padding-block-start: 1rem; */
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  font-weight: 700;
+}
+
+.questions-container{
+  padding-block-end: 2rem;
+}
+.question__wrap{
+  display: flex;
+  align-items: center;
+  margin-block: 1rem;
+}
+.icons{
+  width: 32px;
+  margin-inline-end: 5px;
+}
+.question__wrap p{
+  margin-block-end: 0;
+  /* border-bottom: 4px solid var(--color-primary); */
+}
+
+.word-bank{
+  position: relative;
+  margin-block: 1rem;
+  width: fit-content;
+  margin-inline: auto;
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  text-align: center;
+  border-radius: var(--border-radius);
+}
+.word-bank ul{
+  padding: 0;
+}
+.word-bank::after, .verb-form::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 5px;
+  left: 5px;
+  border-radius: var(--border-radius);
+  background-color: var(--color-primary);
+  z-index: -1;
+}
+
+.imgs-container{
+  display: grid;
+  justify-items: center;
+  gap: 2rem 1rem;
+}
+.tagged__img{
+  position: relative;
+}
+.tagged__img::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  line-height: 2;
+  text-align: center;
+  font-weight: 900;
+  color: var(--color-light);
+  background-color: var(--color-secondary);
+}
+
+.audio-wrapper audio{
+  width: 100%;
+}
+
+.hidden{
+  display: none;
+}

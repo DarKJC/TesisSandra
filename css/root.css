@@ -1,0 +1,17 @@
+:root{  
+    --font-family-main: 'Noto_Serif';
+    --font-family-headings: 'Be_Vietnam';
+    --font-family-body: var(--font-family-main);
+
+    --border-radius: 4px;
+  }
+@font-face {
+  font-family: 'Be_Vietnam';
+  src: url('../fonts/Be_Vietnam_Pro/BeVietnamPro-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Noto_Serif';
+  src: url('../fonts/Noto_Serif/NotoSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}

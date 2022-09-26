@@ -1,0 +1,19 @@
+.verb-form{
+    position: relative;
+    padding-inline: 2rem;
+    padding-block: 1rem;
+    margin-block: 2rem;
+    width: fit-content;
+    margin-inline: auto;
+    border-radius: var(--border-radius);
+}
+
+.text-body{
+    columns: 2;
+    width: fit-content;
+}
+
+.verb-form p{
+    margin-block-end: 1rem;
+    max-width: 40ch;
+}

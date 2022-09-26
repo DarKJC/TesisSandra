@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="activity1.css">
+    <title>Activity 1</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <nav class="nav">
+                <ul class="nav_ul" role="list">
+                    <li class="nav_li">
+                        <a href="../../../index.html">Home</a>
+                    </li>
+                    <li class="nav_li sub"> <a href="">Contents</a>
+                        <ul class="submenu">
+                            <li class="nav_li submenu_li">
+                                <a href="../../study-material/regular-verbs/regular-verbs.html">Regular verbs</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../../study-material/irregular-verbs/irregular-verbs.html">Irregular verbs</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_li">
+                        <a href="../../vocabulary/vocabulary.html">Vocabulary</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="../../videos/videos.html">Videos</a>
+                    </li>
+                    <li class="nav_li sub"><a href="">Activities</a>
+                        <ul class="submenu">
+                            <li class="nav_li submenu_li">
+                                <a href="#">Activity1</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../activity2/activity2.html">Activity2</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../activity3/activity3.html">Activity3</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../activity4/activity4.html">Activity4</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../activity5/activity5.html">Activity5</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../activity6/activity6.html">Activity6</a>
+                            </li>
+                            <li class="nav_li submenu_li">
+                                <a href="../activity7/activity7.html">Activity7</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_li">
+                        <a href="../../results/results.html">Results</a>
+                    </li>
+                    <li class="nav_li">
+                        <a href="../../bibliography/bibliography.html">References</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="loguin" class="get-user">
+                <label for="name">What's your name</label>
+                <div>
+                    <input type="text" id="name">
+                    <button class="button" onclick="guardar()">Start learning!</button>
+                </div>
+            </div>
+            <span class="hidden" id="nombre" class="user">Nombre de usuario</span>
+        </div>
+    </header>
+
+    <div class="page-content">
+        <main>
+            <h1>ACTIVITY 1</h1>
+            <section class="questions-container">
+
+                <div class="question" id="question1">
+
+                    <div class="question__wrap">
+                        <span class="icons"><img src="/images/icons/icons8-open-book-50.png" alt=""></span>
+                        <p>
+                            Read >> Match the photos of environmental problems with expressions from
+                            the Word Bank.
+                        </p>
+                    </div>
+                    <div class="word-bank">
+                        <h2>Word Bank</h2>
+                        <ul role="list">
+                            <li>Illegal mining</li>
+                            <li>Soil polution</li>
+                            <li>Air polution</li>
+                            <li>Deforestation</li>
+                            <li>Water polution</li>
+                        </ul>
+                    </div>
+                    <form action="">
+                        <div class="imgs-container">
+                            <div class="tagged__img" id="divU">
+                                <img src="/images/activity1/cloud-plant-steam-building-smoke-environment-1159740-pxhere.com.jpg"
+                                    alt="two industrial chimneys pouring smoke">
+                                <select onchange="selU()" class="select" name="activity1a" id="resU">
+                                    <option value="" selected>Choose your answer</option>
+                                    <option value="Illegal mining">Illegal mining</option>
+                                    <option value="Soil pollution">Soil pollution</option>
+                                    <option value="Air pollution">Air pollultion</option>
+                                    <option value="Deforestation">Deforestation</option>
+                                    <option value="Water pollution">Water pollution</option>
+                                </select>
+                            </div>
+                            <div class="tagged__img" id="divD">
+                                <img src="/images/activity1/water-nature-plastic-pond-environment-dirt-773268-pxhere.com.jpg"
+                                    alt="river covered with leaves and littered bottles">
+                                <select onchange="selD()" class="select" name="activity1b" id="resD">
+                                    <option value="" selected>Choose your answer</option>
+                                    <option value="Illegal mining">Illegal mining</option>
+                                    <option value="Soil pollution">Soil pollution</option>
+                                    <option value="Air pollution">Air pollultion</option>
+                                    <option value="Deforestation">Deforestation</option>
+                                    <option value="Water pollution">Water pollution</option>
+                                </select>
+                            </div>
+                            <div class="tagged__img" id="divT">
+                                <img src="/images/activity1/winter-litter-waste-2010365-225476-pxhere.com.jpg"
+                                    alt="park terrain covered in thrash, plastic bags and bottles">
+                                <select onchange="selT()" class="select" name="activity1c" id="resT">
+                                    <option value="" selected>Choose your answer</option>
+                                    <option value="Illegal mining">Illegal mining</option>
+                                    <option value="Soil pollution">Soil pollution</option>
+                                    <option value="Air pollution">Air pollultion</option>
+                                    <option value="Deforestation">Deforestation</option>
+                                    <option value="Water pollution">Water pollution</option>
+                                </select>
+                            </div>
+                            <div class="tagged__img" id="divC">
+                                <img src="/images/activity1/landscape-nature-forest-wilderness-mountain-environment-680936-pxhere.com.jpg"
+                                    alt="exterior landscape depicting a barren area with several piles of logs in the foreground and some hills with living trees in the background">
+                                <select onchange="selC()" class="select" name="activity1d" id="resC">
+                                    <option value="" selected>Choose your answer</option>
+                                    <option value="Illegal mining">Illegal mining</option>
+                                    <option value="Soil pollution">Soil pollution</option>
+                                    <option value="Air pollution">Air pollultion</option>
+                                    <option value="Deforestation">Deforestation</option>
+                                    <option value="Water pollution">Water pollution</option>
+                                </select>
+                            </div>
+                            <div class="tagged__img" id="divCi">
+                                <img src="/images/activity1/work-sand-sky-wood-road-tractor-1035378-pxhere.com.jpg"
+                                    alt="exterior landscape of a barren site with red soil and two yellow heavy duty vehicles">
+                                <select onchange="selCi()" class="select" name="activity1e" id="resCi">
+                                    <option value="" selected>Choose your answer</option>
+                                    <option value="Illegal mining">Illegal mining</option>
+                                    <option value="Soil pollution">Soil pollution</option>
+                                    <option value="Air pollution">Air pollultion</option>
+                                    <option value="Deforestation">Deforestation</option>
+                                    <option value="Water pollution">Water pollution</option>
+                                </select>
+                            </div>
+                        </div>
+                        <input class="button button__activity" type="button" id="respuesta" disabled="true"
+                            onclick="revisarRespuesta()" value="Send answer"></input>
+                    </form>
+                </div>
+
+                <div class="attempts">
+                    <h2>Attempts</h2>
+                    <div class="total">
+                        <label>Total</label>
+                        <p id="total"></p>
+                    </div>
+                    <div class="succesful">
+                        <label>successful</label>
+                        <p id="aciertos"></p>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    </div>
+    <script src="/script/usuario.js"></script>
+    <script src="/script/actividad1.js"></script>
+</body>
+
+
+</html>

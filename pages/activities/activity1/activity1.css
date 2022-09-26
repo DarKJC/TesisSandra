@@ -1,0 +1,44 @@
+.word-bank ul{
+    width: 30ch;
+    columns: 2;
+    text-align: left;
+    margin-inline: auto;
+}
+
+.imgs-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    gap: 2rem 1rem;
+}
+
+#divU::before{
+    content: "A";
+}
+#divD::before{
+    content: "B";
+}
+#divT::before{
+    content: "C";
+}
+#divC::before{
+    content: "D";
+}
+#divCi::before{
+    content: "E";
+}
+/* .imgs-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.imgs-container div{
+    width: 18vw;
+    // min-width: 317px; 
+    max-width: 500px;
+} */
+
+.select{
+    width: 100%;
+}
